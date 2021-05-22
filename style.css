@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #417ef0, #fff);
+}
+.Todo-body, .Done-body, .Doing-body{
+    margin:120px auto;
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+.Todo-body h2, .Done-body h2, .Doing-body h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+.Done-body h2, .Doing-body h2{
+    margin-bottom: 15px;
+}
+
+.Todo-body .input-section{
+    width: 100%;
+    display: flex;
+    height: 45px;
+    margin: 20px 0;
+}
+li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    padding: 0 15px;
+    color: #404040;
+    position: relative;
+    margin-bottom: 8px;
+}
+.Todo-body li{
+    background: rgb(146, 194, 240);
+}
+.Doing-body li{
+    background: #f2f2f2;
+}
+.Done-body li{
+    text-decoration: line-through tomato;
+    background: rgb(132, 245, 230);
+}
+.input-section input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid rgb(82, 125, 245);
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.input-section button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: rgb(75, 63, 240);
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.Todo-body .footer a, .Done-body .footer a, .Doing-body .footer a{
+    display: inline-flex;
+    margin: 10px 5px;
+    text-decoration: none;
+}
